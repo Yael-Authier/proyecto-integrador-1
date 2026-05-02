@@ -1,0 +1,20 @@
+2025-10-11 00:45:42,777 | INFO | == ETL FleetLogix  ==
+2025-10-11 00:45:42,915 | INFO | PostgreSQL OK
+2025-10-11 00:45:42,916 | INFO | Snowflake Connector for Python Version: 3.17.4, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-10-11 00:45:42,916 | INFO | Connecting to GLOBAL Snowflake domain
+2025-10-11 00:45:46,680 | INFO | Snowflake OK
+2025-10-11 00:45:46,792 | INFO | Extrayendo datos relativos al ancla=2025-09-23 04:09:09.384154 (últimos 7 días) -> since=2025-09-16 04:09:09.384154
+2025-10-11 00:45:46,955 | INFO | Extract OK (dinámico): trips=962 deliveries=3936
+2025-10-11 00:45:47,055 | INFO | Fact_stg: usando 'customer_name' para asignar CUSTOMER_KEY.
+2025-10-11 00:45:47,058 | INFO | Fact_stg: CUSTOMER_KEY completado mediante merge con DIM_CUSTOMER.
+2025-10-11 00:45:47,059 | INFO | Validaciones OK
+2025-10-11 00:45:47,060 | INFO | dim_driver: columnas normalizadas (full_name creado).
+2025-10-11 00:45:47,190 | INFO | DIM_DATE: 0 filas nuevas
+2025-10-11 00:45:47,337 | INFO | DIM_TIME: 0 filas nuevas
+2025-10-11 00:45:47,469 | INFO | DIM_DRIVER: 0 filas nuevas
+2025-10-11 00:45:47,565 | INFO | DIM_VEHICLE: 0 filas nuevas
+2025-10-11 00:45:47,670 | INFO | DIM_ROUTE: 0 filas nuevas
+2025-10-11 00:45:47,783 | INFO | DIM_CUSTOMER: 0 filas nuevas
+2025-10-11 00:45:49,739 | INFO | FACT_DELIVERIES_STG: 3889 filas insertadas (write_pandas)
+2025-10-11 00:45:50,448 | INFO | FACT_DELIVERIES: insert final OK
+2025-10-11 00:45:50,448 | INFO | ETL completado. Filas nuevas (dims+fact_stg): 3889
